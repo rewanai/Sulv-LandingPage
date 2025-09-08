@@ -13,7 +13,12 @@ export default function Home() {
   return (
     <>
       <Navbar5 />
-      <Hero195 />
+      <Hero195
+        title="The Sulv Platform: How We Build at the Speed of Ideas."
+        description="Sulv is our revolutionary internal platform that uses a team of specialized AI agents to automate the entire Software Development Life Cycle (SDLC)."
+        primaryButtonText="Book A Demo"
+        primaryButtonUrl="#contact"
+      />
       <Feature250 />
       <Services6 />
       <Hero27 />

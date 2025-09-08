@@ -1,17 +1,10 @@
-import type { NextConfig } from 'next';
-
-const nextConfig: NextConfig = {
-  output: 'export',           // <-- key for GitHub Pages
-  trailingSlash: true,        // URLs like /about/ -> /about/index.html
-  images: {
-    unoptimized: true,        // next/image works in static export
-  },
-  // If you were hosting at username.github.io/repo-name you’d need basePath/assetPrefix.
-  // Because you’re using a custom domain (sulv.rewan.ai), you DO NOT need basePath or assetPrefix.
-  // basePath: '/SulvLandingPage',
-  // assetPrefix: '/SulvLandingPage/',
-  eslint: { ignoreDuringBuilds: true },  // optional: don’t fail CI on lint
-  typescript: { ignoreBuildErrors: false }
+// next.config.js
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',           // <— tells Next to generate static HTML into ./out
+  // Optional but recommended for GH Pages:
+  trailingSlash: true,        // makes URLs end with / (better for static hosts)
+  images: { unoptimized: true } // if you're using <Image>, disable the optimizer
 };
 
-export default nextConfig;
+module.exports = nextConfig;
