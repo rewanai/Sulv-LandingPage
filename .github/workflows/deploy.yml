@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
@@ -24,18 +24,26 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'     # Next.js 14/15 friendly
+          node-version: '20'
           cache: 'npm'
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
 
       - name: Install
         run: npm ci
 
-      - name: Build static site
-        run: |
-          npm run build
-          npm run export
-          # ensure .nojekyll so GH Pages serves files starting with underscores
-          touch out/.nojekyll
+      - name: Increase Node memory (optional)
+        run: echo "NODE_OPTIONS=--max_old_space_size=4096" >> $GITHUB_ENV
+
+      - name: Build (Next.js static export)
+        run: npm run build
+
+      - name: Create .nojekyll (avoid Jekyll processing)
+        run: touch ./out/.nojekyll
+
+      - name: Add CNAME file for custom domain
+        run: echo "sulv.rewan.ai" > ./out/CNAME
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
