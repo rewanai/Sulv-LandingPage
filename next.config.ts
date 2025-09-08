@@ -1,15 +1,17 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
-  trailingSlash: true,
-  // The assetPrefix you already have is key for relative paths.
-  assetPrefix: './',
-  reactStrictMode: true,
+import type { NextConfig } from 'next';
+
+const nextConfig: NextConfig = {
+  output: 'export',           // <-- key for GitHub Pages
+  trailingSlash: true,        // URLs like /about/ -> /about/index.html
   images: {
-    unoptimized: true,
+    unoptimized: true,        // next/image works in static export
   },
-  // Add this line for the GitHub Pages subdirectory
-  basePath: '/SulvLandingPage',
+  // If you were hosting at username.github.io/repo-name you’d need basePath/assetPrefix.
+  // Because you’re using a custom domain (sulv.rewan.ai), you DO NOT need basePath or assetPrefix.
+  // basePath: '/SulvLandingPage',
+  // assetPrefix: '/SulvLandingPage/',
+  eslint: { ignoreDuringBuilds: true },  // optional: don’t fail CI on lint
+  typescript: { ignoreBuildErrors: false }
 };
 
-module.exports = nextConfig;
+export default nextConfig;

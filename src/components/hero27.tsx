@@ -18,7 +18,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 
-const DURATION = 8000;
+const DURATION = 4000;
 
 const accordions = [
   {
