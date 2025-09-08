@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Shiba';
+  src: url('./Shiba-Regular.woff2') format('woff2'),
+    url('./Shiba-Regular.woff') format('woff'),
+    url('./Shiba-Regular.otf') format('opentype'),
+    url('./Shiba-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

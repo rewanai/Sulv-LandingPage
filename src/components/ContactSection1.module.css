@@ -1,0 +1,246 @@
+/*
+ * This CSS is a refactored version of the original, optimized for
+ * the new semantic HTML structure of the React component.
+ */
+
+/* --- Main Section and Container --- */
+.proBlocksPricingSection {
+  width: 100%;
+  background: lab(95.36% 0 0);
+  ;
+  padding: 96px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  color: #0a0a0a;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 24px;
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+/* --- Title and Subtitle --- */
+.proBlocksSectionTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  font-family: ;
+  max-width: 576px;
+}
+
+.readyToBuild {
+  font-size: 41px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.letsIdentifyYour {
+  font-size: 16px;
+  line-height: 24px;
+  color: #737373;
+}
+
+/* --- Main Content Layout (Desktop) --- */
+.flexVertical {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* Desktop layout: side-by-side */
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  max-width: 1024px;
+}
+
+/* --- Form and Info Card Styles --- */
+.card,
+.card1 {
+  background-color: #fff;
+  border-radius: 14px;
+  border: 1px solid #e5e5e5;
+  padding: 32px;
+  box-shadow: 0 1px 2px #0000000d;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card2 {
+  background-color: #fff;
+  border-radius: 14px;
+  border: 1px solid #e5e5e5;
+  padding: 32px;
+  box-shadow: 0 1px 2px #0000000d;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 59px;
+}
+
+
+
+.subheadingWrapper {
+  text-align: center;
+  font-size: 20px;
+  color: #0a0a0a;
+}
+
+.subheading {
+  font-weight: 600;
+  line-height: 24px;
+}
+
+/* --- Form Elements --- */
+.card form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  /* Consistent spacing between form elements */
+}
+
+.inputParent {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.inputField {
+  flex: 1;
+  /* Inputs inside .inputParent take equal width */
+  padding: 12px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  color: #0a0a0a;
+  font-size: 14px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: #341539;
+  box-shadow: 0 0 0 3px rgba(52, 21, 57, 0.2);
+}
+
+.textareaField {
+  composes: inputField;
+  /* Inherits styles from inputField */
+
+  resize: vertical;
+}
+
+.button {
+  padding: 8px 16px;
+  background-color: #000000;
+  color: #fafafa;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #4b2552;
+}
+
+.subheading1 {
+  font-size: 14px;
+  line-height: 20px;
+  color: #737373;
+  text-align: center;
+}
+
+/* --- Info Card Elements (Right) --- */
+.frameParent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.subheadingContainer {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0a0a0a;
+}
+
+.subheading2 {
+  line-height: 28px;
+}
+
+.flexVertical1,
+.flexVertical2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.flex1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.subheading3 {
+  font-size: 14px;
+  line-height: 20px;
+  color: #737373;
+}
+
+.subheading11 {
+  font-size: 14px;
+  line-height: 20px;
+  color: #737373;
+}
+
+/* --- Icon Sizing --- */
+.iconCirclecheckbig,
+.vuesaxlinearlocationIcon,
+.phoneIcon,
+.iconMail {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.iconCirclecheckbig {
+  width: 16px;
+  height: 16px;
+}
+
+/* --- Media Queries for Responsiveness --- */
+@media (max-width: 1024px) {
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inputParent {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

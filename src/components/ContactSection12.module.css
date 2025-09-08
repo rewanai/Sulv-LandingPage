@@ -1,0 +1,210 @@
+/* * Styles for the ProBlocksPricingSection4 component.
+ * This CSS is refactored for clarity, maintainability, and semantic HTML.
+ */
+
+/* --- Main Section Layout --- */
+.proBlocksPricingSection {
+  width: 100%;
+  background-color: #fbfbfb;
+  /* Light gray background */
+  padding: 64px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  /* Use a modern, readable font */
+  color: #0a0a0a;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  padding: 0 24px;
+}
+
+/* --- Title and Subtitle --- */
+.proBlocksSectionTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  margin-bottom: 40px;
+  /* Space below the title section */
+}
+
+.featureRichLayoutThat {
+  font-size: 35px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: 'Shiba', sans-serif;
+  /* Keep the original font for the heading */
+}
+
+.addAConcise {
+  font-size: 16px;
+  line-height: 24px;
+  color: #737373;
+  max-width: 576px;
+}
+
+/* --- Main Content Flexbox Layout --- */
+.flex {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  /* Allow wrapping on smaller screens */
+  justify-content: center;
+}
+
+/* --- Card Styles --- */
+.card,
+.card1 {
+  background-color: #fff;
+  border-radius: 14px;
+  border: 1px solid #e5e5e5;
+  padding: 24px;
+  /* Increased padding for better spacing */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  /* Both cards take up equal space */
+  min-width: 300px;
+  /* Prevent cards from getting too small */
+}
+
+/* --- Form Card (Left) --- */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subheadingWrapper {
+  text-align: left;
+  /* Align subheading to the left */
+}
+
+.subheading {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* --- Form Element Styling --- */
+.card form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  /* Consistent spacing between form elements */
+}
+
+.input {
+  background-color: #fff;
+  padding: 12px;
+  /* Adjusted padding for a better feel */
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  color: #0a0a0a;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #341539;
+  /* Focus color to match the button */
+  box-shadow: 0 0 0 3px rgba(52, 21, 57, 0.2);
+}
+
+.textarea {
+  composes: input;
+  /* Inherit styles from .input */
+  min-height: 126px;
+  resize: vertical;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  background-color: #341539;
+  color: #fafafa;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #4b2552;
+}
+
+.subheading1 {
+  font-size: 14px;
+  line-height: 20px;
+  color: #737373;
+  text-align: center;
+}
+
+/* --- Info Card (Right) --- */
+.card1 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.frameParent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.subheading2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0a0a0a;
+}
+
+.flexVertical1,
+.flexVertical2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.flex1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.iconCirclecheckbig,
+.vuesaxlinearlocationIcon,
+.phoneIcon,
+.iconMail {
+  width: 20px;
+  height: 20px;
+}
+
+.subheading3 {
+  font-size: 14px;
+  line-height: 20px;
+  color: #737373;
+}
+
+.subheading11 {
+  font-size: 14px;
+  line-height: 20px;
+  color: #737373;
+}
+
+/* --- Media Queries for Responsiveness --- */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
