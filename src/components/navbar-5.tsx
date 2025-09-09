@@ -1,12 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { MenuIcon } from "lucide-react";
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import {
     NavigationMenu,
@@ -14,7 +10,6 @@ import {
     NavigationMenuItem,
     NavigationMenuLink,
     NavigationMenuList,
-    NavigationMenuTrigger,
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import {
@@ -25,7 +20,6 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet";
 
-// Define a type for the feature objects
 interface Feature {
     title: string;
     description: string;
@@ -33,30 +27,18 @@ interface Feature {
 }
 
 const Navbar5 = () => {
-    // Explicitly type the features array
     const features: Feature[] = [
-        // You can add your actual features here
-        // {
-        //   title: "Feature Title",
-        //   description: "Feature description.",
-        //   href: "/your-link",
-        // }
+        // Add actual features here
     ];
 
     return (
         <section className="py-4">
             <div className="container">
                 <nav className="flex items-center justify-between">
-                    <a
-                        href="https://www.shadcnblocks.com"
-                        className="flex items-center gap-2"
-                    >
-                        <img
-                            src="Logo.png"
-                            className="max-h-8"
-                            alt="Shadcn UI Navbar"
-                        />
+                    <a href="https://www.shadcnblocks.com" className="flex items-center gap-2">
+                        <Image src="/Logo.png" width={100} height={32} alt="Shadcn UI Navbar" />
                     </a>
+
                     <NavigationMenu className="hidden lg:block">
                         <NavigationMenuList>
                             <NavigationMenuItem>
@@ -69,12 +51,8 @@ const Navbar5 = () => {
                                                 className="rounded-md p-3 transition-colors hover:bg-muted/70"
                                             >
                                                 <div key={feature.title}>
-                                                    <p className="mb-1 font-semibold text-foreground">
-                                                        {feature.title}
-                                                    </p>
-                                                    <p className="text-sm text-muted-foreground">
-                                                        {feature.description}
-                                                    </p>
+                                                    <p className="mb-1 font-semibold text-foreground">{feature.title}</p>
+                                                    <p className="text-sm text-muted-foreground">{feature.description}</p>
                                                 </div>
                                             </NavigationMenuLink>
                                         ))}
@@ -83,28 +61,17 @@ const Navbar5 = () => {
                             </NavigationMenuItem>
 
                             <NavigationMenuItem>
-                                <NavigationMenuLink
-                                    href="#process"
-                                    className={navigationMenuTriggerStyle()}
-                                >
+                                <NavigationMenuLink href="#process" className={navigationMenuTriggerStyle()}>
                                     Process
                 </NavigationMenuLink>
                             </NavigationMenuItem>
-
                             <NavigationMenuItem>
-                                <NavigationMenuLink
-                                    href="#benefits"
-                                    className={navigationMenuTriggerStyle()}
-                                >
+                                <NavigationMenuLink href="#benefits" className={navigationMenuTriggerStyle()}>
                                     Benefits
                 </NavigationMenuLink>
                             </NavigationMenuItem>
-
                             <NavigationMenuItem>
-                                <NavigationMenuLink
-                                    href="#capabilities"
-                                    className={navigationMenuTriggerStyle()}
-                                >
+                                <NavigationMenuLink href="#capabilities" className={navigationMenuTriggerStyle()}>
                                     Capabilities
                 </NavigationMenuLink>
                             </NavigationMenuItem>
@@ -124,15 +91,8 @@ const Navbar5 = () => {
                         <SheetContent side="top" className="max-h-screen overflow-auto">
                             <SheetHeader>
                                 <SheetTitle>
-                                    <a
-                                        href="https://www.shadcnblocks.com"
-                                        className="flex items-center gap-2"
-                                    >
-                                        <img
-                                            src="Logo.png"
-                                            className="max-h-8"
-                                            alt="Shadcn UI Navbar"
-                                        />
+                                    <a href="https://www.shadcnblocks.com" className="flex items-center gap-2">
+                                        <Image src="/Logo.png" width={100} height={32} alt="Shadcn UI Navbar" />
                                     </a>
                                 </SheetTitle>
                             </SheetHeader>
@@ -163,15 +123,9 @@ const Navbar5 = () => {
                                 </Accordion>
 
                                 <div className="flex flex-col gap-6">
-                                    <a href="#process" className="font-medium">
-                                        Process
-                  </a>
-                                    <a href="#benefits" className="font-medium">
-                                        Benefits
-                  </a>
-                                    <a href="#capabilities" className="font-medium">
-                                        Capabilities
-                  </a>
+                                    <a href="#process" className="font-medium">Process</a>
+                                    <a href="#benefits" className="font-medium">Benefits</a>
+                                    <a href="#capabilities" className="font-medium">Capabilities</a>
                                 </div>
 
                                 <div className="mt-6 flex flex-col gap-4">

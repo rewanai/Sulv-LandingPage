@@ -1,10 +1,7 @@
 import { useState, type FunctionComponent } from 'react';
+import Image from 'next/image'; // ✅ Import next/image
 import styles from './ContactSection1.module.css';
 
-/**
- * A functional and accessible contact form component.
- * It manages form state, handles user input, and simulates form submission.
- */
 const ProBlocksPricingSection4: FunctionComponent = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -50,7 +47,9 @@ const ProBlocksPricingSection4: FunctionComponent = () => {
         <div className={styles.div}>
           <div className={styles.proBlocksSectionTitle}>
             <b className={styles.readyToBuild}>Ready to Build Your Digital Workforce?</b>
-            <div className={styles.letsIdentifyYour}>Let&apos;s identify your top automation opportunities. Schedule a complimentary, no-obligation audit with our specialists here in Salalah.</div>
+            <div className={styles.letsIdentifyYour}>
+              Let&apos;s identify your top automation opportunities. Schedule a complimentary, no-obligation audit with our specialists here in Salalah.
+            </div>
           </div>
           <div className={styles.flexVertical}>
             <div className={styles.flex}>
@@ -115,7 +114,9 @@ const ProBlocksPricingSection4: FunctionComponent = () => {
                     Schedule a My Free Audit
                   </button>
                 </form>
-                <div className={styles.subheading1}>We&apos;ll respond within 24 hours to schedule your personalized consultation.</div>
+                <div className={styles.subheading1}>
+                  We&apos;ll respond within 24 hours to schedule your personalized consultation.
+                </div>
               </div>
               <div className={styles.card1}>
                 <div className={styles.frameParent}>
@@ -124,19 +125,43 @@ const ProBlocksPricingSection4: FunctionComponent = () => {
                   </div>
                   <div className={styles.flexVertical1}>
                     <div className={styles.flex1}>
-                      <img className={styles.iconCirclecheckbig} alt="" src="CircleCheckBig.svg" />
+                      <Image
+                        className={styles.iconCirclecheckbig}
+                        src="/CircleCheckBig.svg"
+                        alt="Check icon"
+                        width={24}
+                        height={24}
+                      />
                       <div className={styles.subheading3}>Pre-configured for common business roles</div>
                     </div>
                     <div className={styles.flex1}>
-                      <img className={styles.iconCirclecheckbig} alt="" src="CircleCheckBig.svg" />
+                      <Image
+                        className={styles.iconCirclecheckbig}
+                        src="/CircleCheckBig.svg"
+                        alt="Check icon"
+                        width={24}
+                        height={24}
+                      />
                       <div className={styles.subheading3}>Rapid deployment and activation</div>
                     </div>
                     <div className={styles.flex1}>
-                      <img className={styles.iconCirclecheckbig} alt="" src="CircleCheckBig.svg" />
+                      <Image
+                        className={styles.iconCirclecheckbig}
+                        src="/CircleCheckBig.svg"
+                        alt="Check icon"
+                        width={24}
+                        height={24}
+                      />
                       <div className={styles.subheading3}>24/7 monitoring and management</div>
                     </div>
                     <div className={styles.flex1}>
-                      <img className={styles.iconCirclecheckbig} alt="" src="CircleCheckBig.svg" />
+                      <Image
+                        className={styles.iconCirclecheckbig}
+                        src="/CircleCheckBig.svg"
+                        alt="Check icon"
+                        width={24}
+                        height={24}
+                      />
                       <div className={styles.subheading3}>Performance analytics and reporting</div>
                     </div>
                   </div>
@@ -147,20 +172,40 @@ const ProBlocksPricingSection4: FunctionComponent = () => {
                   </div>
                   <div className={styles.flexVertical2}>
                     <div className={styles.flex1}>
-                      <img className={styles.vuesaxlinearlocationIcon} alt="" src="location.svg" />
+                      <Image
+                        className={styles.vuesaxlinearlocationIcon}
+                        src="/location.svg"
+                        alt="Location icon"
+                        width={24}
+                        height={24}
+                      />
                       <div className={styles.subheading3}>Salalah, Sultanate of Oman</div>
                     </div>
                     <div className={styles.flex1}>
-                      <img className={styles.phoneIcon} alt="" src="Phone.svg" />
+                      <Image
+                        className={styles.phoneIcon}
+                        src="/Phone.svg"
+                        alt="Phone icon"
+                        width={24}
+                        height={24}
+                      />
                       <div className={styles.subheading3}>+968 7662 6636</div>
                     </div>
                     <div className={styles.flex1}>
-                      <img className={styles.iconMail} alt="" src="Mail.svg" />
+                      <Image
+                        className={styles.iconMail}
+                        src="/Mail.svg"
+                        alt="Mail icon"
+                        width={24}
+                        height={24}
+                      />
                       <div className={styles.subheading3}>info@rewan.com</div>
                     </div>
                   </div>
                 </div>
-                <div className={styles.subheading11}>From our base in Salalah, we bring together global AI innovation and local market expertise. This combination ensures our rewan-powered solutions meet the exact needs of Omani businesses—securely, seamlessly, and with measurable impact.</div>
+                <div className={styles.subheading11}>
+                  From our base in Salalah, we bring together global AI innovation and local market expertise. This combination ensures our rewan-powered solutions meet the exact needs of Omani businesses—securely, seamlessly, and with measurable impact.
+                </div>
               </div>
             </div>
           </div>
@@ -169,6 +214,5 @@ const ProBlocksPricingSection4: FunctionComponent = () => {
     </div>
   );
 };
-
 
 export { ProBlocksPricingSection4 };

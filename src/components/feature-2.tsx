@@ -1,17 +1,16 @@
 import { Button } from "@/components/ui/button";
+import Image from "next/image"; // ✅ Optimized image component
 
 interface Feature2Props {
-  title?: string; // Add a '?' here
-  description?: string; // Already optional, but good practice
-  imageSrc?: string; // Add a '?' here
-  imageAlt?: string; // Add a '?' here
+  title?: string;
+  description?: string;
+  imageSrc?: string;
+  imageAlt?: string;
   buttonPrimary?: {
-    // Add a '?' here
     label: string;
     href: string;
   };
   buttonSecondary?: {
-    // Add a '?' here
     label: string;
     href: string;
   };
@@ -35,11 +34,18 @@ const Feature2 = ({
     <section className="py-32">
       <div className="container">
         <div className="grid items-center gap-8 md:gap-16 lg:grid-cols-2">
-          <img
-            src={imageSrc}
-            alt={imageAlt}
-            className="max-h-96 w-full rounded-md object-cover"
-          />
+          {/* ✅ Optimized Image component */}
+          <div className="w-full h-auto relative max-h-96">
+            <Image
+              src={imageSrc}
+              alt={imageAlt}
+              layout="responsive"
+              width={800}
+              height={600}
+              className="rounded-md object-cover"
+            />
+          </div>
+
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <h1 className="my-6 mt-0 text-4xl font-semibold text-balance lg:text-5xl">
               {title}
@@ -49,12 +55,12 @@ const Feature2 = ({
             </p>
             <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
               <Button asChild>
-                <a href={buttonPrimary.href} target="_blank">
+                <a href={buttonPrimary.href} target="_blank" rel="noopener noreferrer">
                   {buttonPrimary.label}
                 </a>
               </Button>
               <Button variant="outline" asChild>
-                <a href={buttonSecondary.href} target="_blank">
+                <a href={buttonSecondary.href} target="_blank" rel="noopener noreferrer">
                   {buttonSecondary.label}
                 </a>
               </Button>

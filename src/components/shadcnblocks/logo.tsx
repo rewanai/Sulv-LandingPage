@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import React from "react";
+import Image from "next/image";
 
 export const Logo = React.forwardRef<
   HTMLAnchorElement,
@@ -23,10 +24,28 @@ export const Logo = React.forwardRef<
 Logo.displayName = "Logo";
 
 export const LogoImage = React.forwardRef<
-  HTMLImageElement,
-  React.ImgHTMLAttributes<HTMLImageElement>
->(({ className, ...props }, ref) => (
-  <img ref={ref} className={cn("max-h-8", className)} {...props} />
+  HTMLSpanElement,
+  React.HTMLAttributes<HTMLSpanElement> & {
+    src: string;
+    alt?: string;
+    width?: number;
+    height?: number;
+  }
+>(({ className, src, alt = "Company logo", width = 120, height = 40, ...props }, ref) => (
+  <span
+    ref={ref}
+    className={cn("inline-block", className)}
+    {...props}
+  >
+    <Image
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      className="max-h-8 w-auto"
+      priority
+    />
+  </span>
 ));
 LogoImage.displayName = "LogoImage";
 
