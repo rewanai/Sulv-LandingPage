@@ -35,8 +35,8 @@ const Navbar5 = () => {
         <section className="py-4">
             <div className="container">
                 <nav className="flex items-center justify-between">
-                    <a href="https://www.shadcnblocks.com" className="flex items-center gap-2">
-                        <Image src="/Logo.png" width={100} height={32} alt="Shadcn UI Navbar" />
+                    <a href="" className="flex items-center gap-2">
+                        <Image src="/Logo.png" width={62} height={62} alt="Logo" />
                     </a>
 
                     <NavigationMenu className="hidden lg:block">
@@ -91,8 +91,8 @@ const Navbar5 = () => {
                         <SheetContent side="top" className="max-h-screen overflow-auto">
                             <SheetHeader>
                                 <SheetTitle>
-                                    <a href="https://www.shadcnblocks.com" className="flex items-center gap-2">
-                                        <Image src="/Logo.png" width={100} height={32} alt="Shadcn UI Navbar" />
+                                    <a href="" className="flex items-center gap-2">
+                                        <Image src="/Logo.png" width={62} height={62} alt="Shadcn UI Navbar" />
                                     </a>
                                 </SheetTitle>
                             </SheetHeader>

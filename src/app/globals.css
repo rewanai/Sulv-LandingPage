@@ -1258,6 +1258,13 @@ utilities;
     height: auto;
   }
 
+  img2,
+  video2 {
+    max-width: 62%;
+    height: auto;
+  }
+
+
   .opacity-90 {
     opacity: 90%;
   }
@@ -2423,6 +2430,63 @@ utilities;
     }
   }
 
+  .data-\[orientation\=horizontal\]\:w-full {
+    &[data-orientation="horizontal"] {
+      width: 100%;
+    }
+  }
+
+  .data-\[orientation\=horizontal\]\:h-px {
+    &[data-orientation="horizontal"] {
+      height: 1px;
+    }
+  }
+
+  .relative {
+    position: relative;
+  }
+
+  .lg\:max-w-md {
+    @media (width >=64rem) {
+      max-width: var(--container-md);
+    }
+  }
+
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
+
+  .aspect-\[1\/1\] {
+    aspect-ratio: 1/1;
+  }
+
+  .h-52 {
+    height: calc(var(--spacing) * 52);
+  }
+
+  .max-w-\[600px\] {
+    max-width: 600px;
+  }
+
+  .lg\:scale-150 {
+    @media (width >=64rem) {
+      --tw-scale-x: 128%;
+      --tw-scale-y: 123%;
+      --tw-scale-z: 150%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
+  }
+
+  .lg\:h-82 {
+    @media (width >=64rem) {
+      height: calc(var(--spacing) * 82);
+    }
+  }
+
   .hover\:bg-primary\/90 {
     &:hover {
       @media (hover: hover) {
@@ -2932,6 +2996,12 @@ utilities;
     }
   }
 
+  .lg\:w-fit {
+    @media (width >=64rem) {
+      width: fit-content;
+    }
+  }
+
   .data-\[state\=open\]\:slide-in-from-top {
     &[data-state="open"] {
       --tw-enter-translate-y: -100%;
@@ -3281,6 +3351,10 @@ utilities;
     @media (width >=48rem) {
       gap: calc(var(--spacing) * 16);
     }
+  }
+
+  .\[contain\:layout_paint_size\] {
+    contain: layout paint size;
   }
 
   .md\:gap-20 {

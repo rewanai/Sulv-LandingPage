@@ -190,7 +190,7 @@ export const Header = ({
   titleComponent: React.ReactNode;
 }) => (
     <motion.div
-      style={{ position: "relative", zIndex: -1 }}
+      style={{ position: "relative", zIndex: -1, opacity: 0 }}
       className="mx-auto max-w-5xl text-center"
     >
       {titleComponent}

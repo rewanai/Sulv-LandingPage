@@ -86,10 +86,16 @@ utilities;
     border: 0 solid;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   html,
+
   :host {
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
+    padding: 8px;
     tab-size: 4;
     font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
     font-feature-settings: var(--default-font-feature-settings, normal);
@@ -522,6 +528,35 @@ utilities;
     grid-row-start: 1;
   }
 
+  .containerr {
+    width: 100%;
+
+    @media (width >=40rem) {
+      max-width: -webkit-fill-available;
+      padding: 45px 80px;
+    }
+
+    @media (width >=48rem) {
+      max-width: -webkit-fill-available;
+      padding: 45px 80px;
+    }
+
+    @media (width >=64rem) {
+      max-width: -webkit-fill-available;
+      padding: 45px 80px;
+    }
+
+    @media (width >=80rem) {
+      max-width: -webkit-fill-available;
+      padding: 45px 80px;
+    }
+
+    @media (width >=96rem) {
+      max-width: -webkit-fill-available;
+      padding: 45px 80px;
+    }
+  }
+
   .container {
     width: 100%;
 
@@ -725,6 +760,12 @@ utilities;
 
   .grid {
     display: grid;
+  }
+
+
+  .gridf {
+    justify-content: space-around;
+    display: flex;
   }
 
   .hidden {
@@ -1217,8 +1258,19 @@ utilities;
     height: auto;
   }
 
+  img2,
+  video2 {
+    max-width: 62%;
+    height: auto;
+  }
+
+
   .opacity-90 {
     opacity: 90%;
+  }
+
+  .opacity0 {
+    opacity: 0%;
   }
 
   .gap-6 {
@@ -1520,6 +1572,10 @@ utilities;
     background-color: var(--color-green-500);
   }
 
+  .bg-mutedd {
+    background-color: var(--mutedd);
+  }
+
   .bg-muted {
     background-color: var(--muted);
   }
@@ -1817,7 +1873,7 @@ utilities;
   }
 
   .pt-32 {
-    padding-top: calc(var(--spacing) * 32);
+    padding-top: calc(var(--spacing) * 27);
   }
 
   .pr-2\.5 {
@@ -1856,12 +1912,21 @@ utilities;
     padding-left: calc(var(--spacing) * 2);
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
   }
 
   .text-center {
     text-align: center;
+  }
+
+  .text-centerr {
+
+    opacity: 0%;
   }
 
   .text-left {
@@ -2362,6 +2427,63 @@ utilities;
           background-color: color-mix(in oklab, var(--muted) 70%, transparent);
         }
       }
+    }
+  }
+
+  .data-\[orientation\=horizontal\]\:w-full {
+    &[data-orientation="horizontal"] {
+      width: 100%;
+    }
+  }
+
+  .data-\[orientation\=horizontal\]\:h-px {
+    &[data-orientation="horizontal"] {
+      height: 1px;
+    }
+  }
+
+  .relative {
+    position: relative;
+  }
+
+  .lg\:max-w-md {
+    @media (width >=64rem) {
+      max-width: var(--container-md);
+    }
+  }
+
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
+
+  .aspect-\[1\/1\] {
+    aspect-ratio: 1/1;
+  }
+
+  .h-52 {
+    height: calc(var(--spacing) * 52);
+  }
+
+  .max-w-\[600px\] {
+    max-width: 600px;
+  }
+
+  .lg\:scale-150 {
+    @media (width >=64rem) {
+      --tw-scale-x: 128%;
+      --tw-scale-y: 123%;
+      --tw-scale-z: 150%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
+  }
+
+  .lg\:h-82 {
+    @media (width >=64rem) {
+      height: calc(var(--spacing) * 82);
     }
   }
 
@@ -2874,6 +2996,12 @@ utilities;
     }
   }
 
+  .lg\:w-fit {
+    @media (width >=64rem) {
+      width: fit-content;
+    }
+  }
+
   .data-\[state\=open\]\:slide-in-from-top {
     &[data-state="open"] {
       --tw-enter-translate-y: -100%;
@@ -3223,6 +3351,10 @@ utilities;
     @media (width >=48rem) {
       gap: calc(var(--spacing) * 16);
     }
+  }
+
+  .\[contain\:layout_paint_size\] {
+    contain: layout paint size;
   }
 
   .md\:gap-20 {
@@ -3792,17 +3924,7 @@ utilities;
     }
   }
 
-  .\[\&_svg\]\:pointer-events-none {
-    & svg {
-      pointer-events: none;
-    }
-  }
 
-  .\[\&_svg\]\:shrink-0 {
-    & svg {
-      flex-shrink: 0;
-    }
-  }
 
   .\[\&_svg\:not\(\[class\*\=\'size-\'\]\)\]\:size-4 {
     & svg:not([class*='size-']) {
@@ -3829,24 +3951,8 @@ utilities;
     }
   }
 
-  .\[\&\>svg\]\:pointer-events-none {
-    &>svg {
-      pointer-events: none;
-    }
-  }
 
-  .\[\&\>svg\]\:size-3 {
-    &>svg {
-      width: calc(var(--spacing) * 3);
-      height: calc(var(--spacing) * 3);
-    }
-  }
 
-  .\[\&\[data-state\=open\]\>svg\]\:rotate-180 {
-    &[data-state=open]>svg {
-      rotate: 180deg;
-    }
-  }
 
   .\[a\&\]\:hover\:bg-accent {
     a& {
@@ -4013,6 +4119,7 @@ utilities;
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
+  --mutedd: oklch(0.96 0 0);
   --muted-foreground: oklch(0.556 0 0);
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
