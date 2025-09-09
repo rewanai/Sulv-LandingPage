@@ -5,7 +5,7 @@
   "homepage": "https://rewan.github.io/SulvLandingPage",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "export": "next export",
     "predeploy": "npm run build && npm run export",
     "deploy:local": "npx serve -s out -l 5000"
