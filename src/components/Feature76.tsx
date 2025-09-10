@@ -3,32 +3,33 @@ import { Gauge, ShieldCheck, BadgeCheck, BrickWall } from "lucide-react";
 const features = [
   {
     id: "feature-1",
-    title: "Unprecedented Speed to Market",
+    title: "AI Cyber Teammates",
     description:
-      "By automating our own development, we can design, build, and deploy your custom automation solutions in a fraction of the time of traditional development, delivering value faster.",
+      "Sulv’s agents work like intelligent collaborators, managing every stage of the SDLC.",
     icon: <Gauge className="size-10" strokeWidth={1.5} />,
   },
   {
     id: "feature-2",
-    title: "Rock-Solid Reliability",
+    title: "End-to-End Automation",
     description:
-      "An AI-driven QA process and standardized coding mean your applications are more robust, with fewer bugs and greater dependability from day one.",
+      "From requirements to deployment, Sulv runs the entire workflow with speed and consistency.",
     icon: <BadgeCheck className="size-10" strokeWidth={1.5} />,
   },
   {
     id: "feature-3",
-    title: "Inherent Security",
+    title: "Context-Aware Intelligence",
     description:
-      "Automating the build and deployment process minimizes human intervention, reducing the attack surface and embedding security best practices at every step.",
+      "Unlike task-based tools, Sulv adapts to your project’s unique needs and goals.",
     icon: <BrickWall className="size-10" strokeWidth={1.5} />,
   },
   {
     id: "feature-4",
-    title: "Exceptional Value",
+    title: "Beyond Just Frameworks",
     description:
-      "Our extreme efficiency isn't just an internal metric; it allows us to deliver technologically advanced solutions with a lower total cost of ownership and a faster return on your investment.",
+      "Sulv is not a library — it’s a complete AI-powered SDLC platform.",
     icon: <ShieldCheck className="size-10" strokeWidth={1.5} />,
   },
+
 ];
 
 const Feature76 = () => {
@@ -36,7 +37,7 @@ const Feature76 = () => {
     <section id="benefits" className="relative pt-32" >
       <div className="container relative z-10 flex flex-col space-y-14 ">
         <h2 className="px-6 text-3xl font-semibold md:mb-4 md:text-5xl lg:mb-6 lg:max-w-md lg:px-10 ">
-          What Our Sulv Platform Means For You.
+          Why Our Sulv Platform is Built for You?
         </h2>
         <div className="relative mt-6 md:mt-10">
           <div className="bg-border absolute left-0 right-0 top-0 h-px" />

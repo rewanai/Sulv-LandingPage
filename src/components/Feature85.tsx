@@ -7,15 +7,15 @@ import {
 
 const reasons = [
   {
-    title: "Natural Voice Communication",
+    title: "Initiate & Plan",
     description:
-      "We engineer solutions with advanced speech-to-speech technology, allowing your Cyber Employees to understand spoken commands and respond with natural, human-like voice. This is the engine for automating interactive customer service calls, internal IT helpdesks, and other voice-activated workflows for the Omani market and beyond.",
+      "Sulv’s agents begin by gathering requirements, identifying stakeholders, and setting project objectives. They translate high-level ideas into structured roadmaps, ensuring clarity, alignment, and a solid foundation for the entire lifecycle.",
     icon: <AudioLines className="size-7 shrink-0 md:size-8" strokeWidth={1.5} />,
   },
   {
-    title: "Immersive 3D Experiences",
+    title: "Analyze & Design",
     description:
-      "We move beyond flat screens to create AI-driven, interactive 3D models that run directly in a web browser. This allows for immersive product demonstrations, complex virtual training for employees, and dynamic visualization of real estate or engineering data.",
+      "Specialized agents run feasibility checks, conduct risk assessments, and produce architectural blueprints. This guarantees that every solution is technically sound, business-aligned, and designed for long-term scalability and performance.",
     icon: (
       <Rotate3d
         className="size-7 shrink-0 md:size-8"
@@ -24,17 +24,17 @@ const reasons = [
     ),
   },
   {
-    title: "Intuitive Human-AI Collaboration",
+    title: "Build & Test",
     description:
-      "Effective automation requires a seamless bridge between human and digital workers. We design and build highly intuitive and interactive web interfaces, dashboards, and control panels that allow your team to assign tasks, monitor performance, and collaborate with their Cyber Employee counterparts in real time.",
+      "Development agents generate clean, efficient code while testing agents continuously validate functionality, performance, and security. Automated debugging and quality assurance reduce errors early, accelerating timelines without compromising reliability.",
     icon: (
       <BrainCircuit className="size-7 shrink-0 md:size-8" strokeWidth={1.5} />
     ),
   },
   {
-    title: "Grounded, Factual Reasoning",
+    title: "Deploy & Maintain",
     description:
-      "To ensure our AI provides answers grounded in your reality, we build with Retrieval-Augmented Generation (RAG). This advanced system allows a Cyber Employee to access your company’s private knowledge base—technical manuals, internal policies, past project data—to provide responses that are accurate, context-aware, and specific to your business, eliminating generic or incorrect information.",
+      "Deployment agents manage releases, configurations, and monitoring in production environments. Maintenance agents handle updates, patches, and feedback integration, ensuring your software stays secure, adaptable, and consistently optimized.",
     icon: (
       <BookOpenText className="size-7 shrink-0 md:size-8" strokeWidth={1.5} />
     ),

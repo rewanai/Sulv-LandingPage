@@ -21,8 +21,8 @@ export default function Home() {
       />
       <Feature250 />
       <Services6 />
-      <Hero27 />
       <Feature76 />
+      <Hero27 />
       <Feature85 />
       <Cta13 />
       <ProBlocksPricingSection4 />
