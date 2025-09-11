@@ -1,7 +1,7 @@
 "use client";
 
 import { Zap } from "lucide-react"; // ✅ Removed unused Cpu
-import { Code, Cog, PenTool, Rocket, ScanEye } from "lucide-react";
+import { Code, Cog, PenTool, Rocket, ScanEye, AppWindow } from "lucide-react";
 
 import React, { useRef } from "react";
 import Image from "next/image"; // ✅ Add optimized Image
@@ -99,7 +99,7 @@ function AnimatedBeamIllustration() {
         </div>
 
         <div ref={div7Ref} className="size-15 bg-muted z-10 mt-40 flex items-center justify-center rounded-xl border lg:mt-0">
-          <Zap fill="currentColor" />
+          <AppWindow />
         </div>
       </div>
 

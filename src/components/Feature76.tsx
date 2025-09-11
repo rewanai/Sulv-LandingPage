@@ -34,7 +34,7 @@ const features = [
 
 const Feature76 = () => {
   return (
-    <section id="benefits" className="relative pt-32" >
+    <section id="benefits" className="relative py-32" >
       <div className="container relative z-10 flex flex-col space-y-14 ">
         <h2 className="px-6 text-3xl font-semibold md:mb-4 md:text-5xl lg:mb-6 lg:max-w-md lg:px-10 ">
           Why Our Sulv Platform is Built for You?

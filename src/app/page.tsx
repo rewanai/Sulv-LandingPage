@@ -19,9 +19,9 @@ export default function Home() {
         primaryButtonText="Book A Demo"
         primaryButtonUrl="#contact"
       />
-      <Feature250 />
-      <Services6 />
       <Feature76 />
+      <Services6 />
+      <Feature250 />
       <Hero27 />
       <Feature85 />
       <Cta13 />

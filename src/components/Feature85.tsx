@@ -49,10 +49,10 @@ const Feature85 = () => {
           <div className="relative container overflow-hidden border-x border-muted-foreground/20">
             <div className="space-y-4 text-center">
               <h1 className="text-3xl font-semibold tracking-tight md:text-5xl">
-                The Building Blocks of Advanced Intelligence
+                How Sulv Works Across the SDLC
               </h1>
               <p className="text-muted-foreground mx-auto mb-4 max-w-2xl text-center md:text-xl">
-                Our rewan framework integrates a suite of state-of-the-art technologies, enabling us to build Cyber Employees and applications that can see, hear, talk, and reason with your business data.
+                Sulv unites AI agents to manage every stage of the software lifecycle. From planning and design to build, test, deploy, and maintain — each phase is automated for speed, accuracy, and seamless collaboration.
               </p>
             </div>
           </div>
